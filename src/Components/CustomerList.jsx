@@ -193,7 +193,7 @@ export default function CustomerList() {
     }
 
     return (
-        <div style={{width: "100%"}}>
+        <div style={{width: "100%", paddingLeft: "10%", paddingRight: "10%"}}>
             <div style={{display: "flex", justifyContent: "flex-start", paddingBottom:  10, alignItems: "center"}}>
                 <div>
                     <AddNewCustomer addNewCustomer={addNewCustomer} />
