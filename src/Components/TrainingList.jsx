@@ -145,7 +145,7 @@ export default function TrainingList() {
     }
 
     return (
-        <div style={{width: "70%", paddingLeft: "20%"}}>
+        <div style={{width: "100%"}}>
             <div style={{display: "flex", justifyContent: "flex-start", paddingBottom:  10, alignItems: "center"}}>
                 <div>
                     <AddTraining addNewTraining={addNewTraining} customerList={customerList}/>
