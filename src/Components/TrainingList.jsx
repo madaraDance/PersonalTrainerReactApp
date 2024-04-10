@@ -133,7 +133,7 @@ export default function TrainingList() {
     }
 
     const onFilterTextBoxChanged = useCallback(() => {
-        setQuickFilterText(document.getElementById("filter-text-box-training").value);
+        setQuickFilterText(document.getElementById("filter-text-box-training1").value);
       }, []);
     
       const showAlert = () => {
@@ -157,7 +157,7 @@ export default function TrainingList() {
                     <div style={{marginLeft: 10 }}>
                         <input
                             type="text"
-                            id="filter-text-box"
+                            id="filter-text-box-training1"
                             placeholder="Filter..."
                             onInput={onFilterTextBoxChanged}
                         />
