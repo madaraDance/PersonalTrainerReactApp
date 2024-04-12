@@ -22,6 +22,8 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import CustomerList from './CustomerList';
 import TrainingList from './TrainingList';
 import Calendar from './Calendar'
+import ChartComponent from './ChartComponent';
+import BarChartIcon from '@mui/icons-material/BarChart';
 
 const drawerWidth = 240;
 
@@ -127,11 +129,12 @@ const DrawerHeader = styled('div')(({ theme }) => ({
                   { text: 'Customer', value: 'CustomerList' },
                   { text: 'Trainings', value: 'TrainingList' },
                   { text: 'Calendar', value: 'Calendar' },
+                  {text: 'Activity Chart', value: 'Chart'}
                 ].map((item, index) => (
                   <ListItem key={item.text} onClick={() => setSelectedPage(item.value)}>
                     <ListItemButton>
                       <ListItemIcon>
-                        {index === 0 ? <PeopleIcon /> : index === 1 ? <AccessibilityIcon /> : <CalendarMonthIcon />}
+                        {index === 0 ? <PeopleIcon /> : index === 1 ? <AccessibilityIcon /> : index === 2 ? <CalendarMonthIcon /> : <BarChartIcon />}
                       </ListItemIcon>
                       <ListItemText primary={item.text} />
                     </ListItemButton>
@@ -144,6 +147,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
               {selectedPage === 'CustomerList' && <CustomerList />}
               {selectedPage === 'TrainingList' && <TrainingList />}
               {selectedPage === 'Calendar' && <Calendar />}
+              {selectedPage === 'Chart' && <ChartComponent />}
             </Main>
           </Box>
         );
