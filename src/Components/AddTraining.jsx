@@ -9,7 +9,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Box from '@mui/material/Box';
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
+import PlaylistAddIcon from '@mui/icons-material/PlaylistAdd';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
@@ -111,7 +111,7 @@ export default function AddTraining(props) {
                 onMouseLeave={handleMouseOff}
                 >
                 {isIcon ? (
-                    <FitnessCenterIcon />
+                    <PlaylistAddIcon />
                 ) : (
                 <Box
                     height={50}
